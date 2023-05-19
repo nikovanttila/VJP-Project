@@ -1,0 +1,243 @@
+.App {
+  text-align: center;
+  background-color: white;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: rgb(100, 100, 100);
+  position: relative;
+}
+
+.container{
+  display:flex;
+}
+nav{
+  font-family: 'Times New Roman', Times, serif;
+  display:relative;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px 20px;
+}
+nav ul li a {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+  font-size: 28px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 2.5px;
+  background: rgb(100, 100, 100);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+.App p {
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  text-align: left;
+  max-width: 55%;
+  margin-bottom: 4%;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+.App p span.first-letter {
+  font-size: 33px;
+}
+.App p br {
+  content: '';
+  display: block;
+  margin: 10px 0;
+}
+
+.Home img {
+  width:100%;
+}
+
+.image-container {
+  margin-top: 5%;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  position: flex;
+  left: 0;
+  bottom: 0;
+  width: 96%;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.footer img {
+  width: 50px; 
+  height: auto; 
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.FishVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.FishVideo p {
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  margin-bottom: 1%;
+}
+.FishVideo h2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  margin-bottom: 0%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.tekstikenttä {
+  resize: none;
+  height: 70px;
+  width: 400px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  border: 2px solid rgb(169, 169, 169);
+  line-height: 2;
+  padding: 15px;
+}
+
+.tekstikenttä:focus {
+  border-color: rgb(125, 125, 125);
+  outline: none;
+}
+
+.nappi {
+  height: 103px;
+  width: 100px;
+  background: rgb(174, 174, 174);
+  border: none;
+  color: white;
+  border-radius: 1em;
+  font-size: 150%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.nappi:hover,
+.nappi:focus-visible {
+  color: rgb(125, 125, 125);
+}
+
+.Comment-container {
+  width: 600px;
+}
+
+.Comment-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.Comment-area {
+  position: relative;
+  resize: none;
+  height: 70px;
+  width: 400px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  border: 2px solid rgb(169, 169, 169);
+  line-height: 2;
+  padding: 15px;
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.Delete-nappi {
+  width: 20px;
+  height: 20px;
+  position: absolute; 
+  bottom: 7px;
+  right: 9px; 
+}
+.Delete-nappi img {
+  width: 15px;
+  height: 15px;
+  position: inherit; 
+  bottom: 1px;
+  right: 1px; 
+}
+
+.Votes {
+  color: rgb(143, 143, 143);
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.Comment-controls {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Upvote-nappi {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  border-color: rgb(137, 182, 130);
+  background: url("./images/arrow.png");
+  transform: rotate(180deg);
+  background-size: cover;
+}
+
+.Downvote-nappi {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  border-color: rgb(148, 85, 85);
+  background: url("./images/arrow.png");
+  background-size: cover;
+}
+
+.Timestamp {
+  position: absolute;
+  top: 1px;
+  right: 10px; 
+}
